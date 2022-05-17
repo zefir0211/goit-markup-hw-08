@@ -1,0 +1,34 @@
+.social-network {
+    display: flex;
+    justify-content: center;
+    &__item + &__item {
+        margin-left: 10px;
+    }
+    &__links {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+        background-color: var(--active-text-color);
+        }
+        &:hover .social-network__icon,
+        &:focus .social-network__icon {
+        fill: var(--white-text-color);
+        }
+    }
+    &__icon {
+    fill: #AFB1B8;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+.main-lead__text,
+.btn-modal-form-text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+}
+
+.modal-btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.footer-send-btn__text {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    margin-left: 29px;
+    text-align: left;
+    
+    color: #FFFFFF;
+}
+
+.portfolio-text-btn {
+    display: block;
+    margin: 6px 22px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-nav-text-color);
+}

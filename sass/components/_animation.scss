@@ -1,0 +1,22 @@
+.header__flex a,
+svg,
+.main-lead__btn,
+.main-team-list a,
+svg,
+.clients-list a,
+svg,
+.social-network__item a,
+svg,
+.modal-input,
+.modal-comment,
+.footer-contacts a,
+.portfolio-main-btn button,
+span,
+.modal-send-btn,
+.footer-send-btn {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
