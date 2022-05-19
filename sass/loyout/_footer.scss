@@ -4,16 +4,32 @@
     margin: auto;
     background: var(--background);
     &-contacts {
-            margin-right: 70px;
+            @media screen and (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+            }
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+            @media screen and (min-width: 1200px) {
+                display: block;
+                margin-right: 70px;
+            }
         &__address {
-            margin-top: 20px;
-    
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 1.7;
             letter-spacing: 0.03em;
             color: var(--white-text-color);
+            @media screen and (max-width: 767px) {
+                    margin: auto;
+                    margin-top: 20px;
+            }
+            @media screen and (min-width: 1200px) {
+                margin-top: 20px;
+            }
         }
         &__mail,
         &__tel {
@@ -30,6 +46,17 @@
             &:focus {
                 color: var(--active-text-color);
             }
+            @media screen and (max-width: 767px) {
+                margin: auto;
+                margin-top: 8px;
+            }
+            @media screen and (min-width: 768px) {
+                margin: auto;
+                margin-top: 8px;
+            }
+            @media screen and (min-width: 1200px) {
+                margin-top: 9px;
+            }
         }
     }
     &__title-text {
@@ -40,9 +67,43 @@
         text-transform: uppercase;
 
         color: #FFFFFF;
-        margin-bottom: 20px;
+
+        // margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            margin: auto;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+            margin-bottom: 20px
+            
+        }
+        @media screen and (min-width: 1200px) {
+            margin: 0;
+            margin-bottom: 20px;
+        }
     }
     &>.container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    }
+    
+}
+
+.footer-element {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
     }
@@ -51,7 +112,17 @@
 // Social-link
 
 .footer-social-network {
-    margin-right: 93px;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .footer-social-link {
@@ -65,10 +136,25 @@
 
 /* footer send */
 
+.footer-subscribe {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin: 0;
+    }
+}
+
 .footer-subscribe__input {
-    width: 358px;
     height: 50px;
-    margin-right: 12px;
     padding-left: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -86,5 +172,17 @@
         letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
+    }
+     @media screen and (max-width: 767px) {
+        width: 100%;
+        margin: auto;
+    }
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
     }
 }

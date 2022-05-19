@@ -84,6 +84,13 @@
         right: 28px;
         transform: translateY(-50%);
     }
+    @media screen and (max-width: 767px) {
+        margin: auto;
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+    }
 }
 
 .portfolio-main-btn {

@@ -5,6 +5,16 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--black-text-color);
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        margin: auto;
+    }
+    @media screen and (min-width: 768px) {
+            font-size: 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
 }
 
 .header-logo {
@@ -15,11 +25,17 @@
 }
 
 .footer-logo {
-    margin: 0;
+    
     &__styles {
         color: var(--active-text-color);
     } 
     &__item {
         color: var(--white-text-color);
+    }
+    @media screen and (min-width: 480px) {
+        margin: auto;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
     }
 }
