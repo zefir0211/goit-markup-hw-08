@@ -27,7 +27,7 @@
 }
 
 .footer-logo {
-    
+    margin: auto;
     &__styles {
         color: var(--active-text-color);
     } 
@@ -35,7 +35,7 @@
         color: var(--white-text-color);
     }
     @media screen and (min-width: 480px) {
-        margin: auto;
+        
     }
     @media screen and (min-width: 768px) {
         margin-bottom: 20px;
