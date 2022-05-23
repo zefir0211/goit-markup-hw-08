@@ -1,15 +1,18 @@
 .header {
+    position: relative;
     border-bottom: 1px solid #ECECEC;
     margin: 0 auto;
     max-width: 480px;
-    // padding-top: 24px;
-    // padding-bottom: 25px;
     padding-top: 16px;
     padding-bottom: 16px;
     &__flex {
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__menu-btn {
         position: absolute;
@@ -22,7 +25,7 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-        z-index: 1;
+        z-index: 2;
         .header-close-icon {
                 display: none;
             }
@@ -36,11 +39,27 @@
         &:focus {
             fill: var(--active-text-color);
         }
+        @media screen and (min-width: 768px) {
+        display: none;
+    }
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 796px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 }
 
 .navigation {
     display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 .navigation__list {
@@ -79,8 +98,14 @@
 
 .contacts {
     margin-left: auto;
-    // display: flex;
     display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 
     &>a:hover,
     &>a:focus {
@@ -98,6 +123,10 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--item-text-color);
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 1.2;
+    }
     }
 
     &__icon {
@@ -106,9 +135,16 @@
     }
 
     &__mail {
-        margin-right: 50px;
         display: flex;
         align-items: center;
+        @media screen and (min-width: 768px) {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin: 0;
+            margin-right: 50px;
+        }        
     }
 
     &__tel {
