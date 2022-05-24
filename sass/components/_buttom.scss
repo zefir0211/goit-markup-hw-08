@@ -95,13 +95,30 @@
 
 .portfolio-main-btn {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
     &-item {
         margin-right: 8px;
         &:last-child {
             margin: 0;
         }
+        &:first-child {
+            margin-bottom: 15px;
+        }
+        @media screen and (min-width: 768px) {
+        &:first-child {
+            margin-bottom: 0px;
+        }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 50px;
     }
 }
 

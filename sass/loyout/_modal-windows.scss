@@ -26,8 +26,6 @@
 
     padding: 40px;
 
-    // min-width: 528px;
-    // min-height: 581px;
     min-width: 450px;
     max-height: 100%;
 
@@ -41,6 +39,10 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     @media screen and (min-width: 768px) {
+        max-width: 450px;
+        max-height: 100%;
+    }
+    @media screen and (min-width: 1200px) {
         min-width: 528px;
         min-height: 581px;
     }
@@ -168,15 +170,17 @@
     border-radius: 2px;
     position: absolute;
     top: 50%;
-    // left: 12px;
     left: 0;
     transform: translateY(-50%);
+
+    @media screen and (min-width: 1200px) {
+        left: 12px;
+    }
+    
 }
 
 .user-check-text {
     font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.7;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -185,6 +189,11 @@
     justify-content: center;
 
     color: #757575;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
 
 .agreement-conditions {
