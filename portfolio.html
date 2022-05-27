@@ -28,8 +28,8 @@
                 </button>
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__items"><a class="navigation__link current" href="index.html">Студия</a></li>
-                        <li class="navigation__items"><a class="navigation__link" href="portfolio.html">Портфолио</a></li>
+                        <li class="navigation__items"><a class="navigation__link" href="index.html">Студия</a></li>
+                        <li class="navigation__items"><a class="navigation__link current" href="portfolio.html">Портфолио</a></li>
                         <li class="navigation__items"><a class="navigation__link" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
@@ -44,29 +44,38 @@
                         </svg>+38 096 111 11 11</a>
                 </div>
                 <div class="header-modal-menu" data-menu>
-                    <nav class="header-modal-menu__navigation">
-                        <ul class="header-modal-menu__list">
-                            <li class="header-modal-menu__items"><a class="header-modal-menu__link"
-                                    href="index.html">Студия</a></li>
-                            <li class="header-modal-menu__items"><a class="header-modal-menu__link"
-                                    href="portfolio.html">Портфолио</a></li>
-                            <li class="header-modal-menu__items"><a class="header-modal-menu__link"
-                                    href="#contacts">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header-modal-menu__contacts">
-                        <a href="tel:+380961111111" class="header-modal-menu__tel">
-                            +38 096 111 11 11</a>
-                        <a href="mailto:info@devstudio.com" class="header-modal-menu__mail">
-                            info@devstudio.com</a>
+                    <!-- <button class="header__modal-menu-btn" tupe="button" aria-expanded="true" data-menu-button>
+                                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                    <use class="header-menu-icon" href="./images/icons.svg#icon-header-menu"></use>
+                                    <use class="header__modal-close-icon" href="./images/icons.svg#icon-header-menu-close"></use>
+                                </svg>
+                            </button> -->
+                    <div class="container">
+                        <nav class="header-modal-menu__navigation">
+                            <ul class="header-modal-menu__list">
+                                <li class="header-modal-menu__items"><a class="header-modal-menu__link"
+                                        href="index.html">Студия</a></li>
+                                <li class="header-modal-menu__items"><a class="header-modal-menu__link"
+                                        href="portfolio.html">Портфолио</a></li>
+                                <li class="header-modal-menu__items"><a class="header-modal-menu__link"
+                                        href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-flex-container">
+                            <div class="header-modal-menu__contacts">
+                                <a href="tel:+380961111111" class="header-modal-menu__tel">
+                                    +38 096 111 11 11</a>
+                                <a href="mailto:info@devstudio.com" class="header-modal-menu__mail">
+                                    info@devstudio.com</a>
+                            </div>
+                            <div class="header-modal-menu__social-network">
+                                <a href="" class="header-modal-menu__social-network-link">Instagram</a>
+                                <a href="" class="header-modal-menu__social-network-link">Twitter</a>
+                                <a href="" class="header-modal-menu__social-network-link">Facebook</a>
+                                <a href="" class="header-modal-menu__social-network-link">LinkedIn</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="header-modal-menu__social-network">
-                        <a href="" class="header-modal-menu__social-network-link">Instagram</a>
-                        <a href="" class="header-modal-menu__social-network-link">Twitter</a>
-                        <a href="" class="header-modal-menu__social-network-link">Facebook</a>
-                        <a href="" class="header-modal-menu__social-network-link">LinkedIn</a>
-                    </div>
-    
                 </div>
             </div>
         </div>
@@ -85,7 +94,15 @@
                 <ul class="portfolio-main-content">
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities.jpg" alt="web-site" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities.jpg" alt="web-site" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div>                        
@@ -96,7 +113,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-1.jpg" alt="design" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-1-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-1-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-1-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-1-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-1-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-1-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-1.jpg" alt="design" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
@@ -107,7 +132,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-2.jpg" alt="appendix" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-2-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-2-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-2-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-2-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-2-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-2-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-2.jpg" alt="appendix" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
@@ -118,7 +151,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-3.jpg" alt="marketing" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-3-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-3-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-3-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-3-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-3-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-3-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-3.jpg" alt="marketing" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
@@ -129,7 +170,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-4.jpg" alt="appendix" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-4-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-4-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-4-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-4-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-4-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-4-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-4.jpg" alt="appendix" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
@@ -140,7 +189,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-5.jpg" alt="web-site" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-5-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-5-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-5-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-5-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-5-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-5-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-5.jpg" alt="web-site" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
@@ -151,7 +208,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-6.jpg" alt="design" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-6-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-6-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-6-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-6-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-6-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-6-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-6.jpg" alt="design" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
@@ -162,7 +227,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-7.jpg" alt="marketing" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-7-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-7-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-7-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-7-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-7-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-7-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-7.jpg" alt="marketing" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
@@ -173,7 +246,15 @@
                     </li>
                     <li class="portfolio-main-content-item">
                         <div class="portfolio-card">
-                            <img src="./images/our-possibilities-8.jpg" alt="appendix" width="370" height="294" class="portfolio-main-img">
+                            <picture>
+                                <source srcset="./images/1200/our-possibilities-8-1200-1x.jpg 1x, 
+                                ./images/1200/our-possibilities-8-1200-1x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="./images/768/our-possibilities-8-768-1x.jpg 1x, 
+                                ./images/768/our-possibilities-8-768-2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="./images/480/our-possibilities-8-480-1x.jpg 1x, 
+                                ./images/480/our-possibilities-8-480-2x.jpg 2x" media="(min-width:320px)"/>
+                                <img src="./images/our-possibilities-8.jpg" alt="appendix" width="370" height="294" class="portfolio-main-img">
+                            </picture>
                             <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения <br>о компании или частном лице.</p>
                         </div> 
