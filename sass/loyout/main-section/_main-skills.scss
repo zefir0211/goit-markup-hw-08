@@ -1,5 +1,4 @@
 .main-skills {
-    padding-top: 94px;
     padding-bottom: 94px;
     &__heading {
             margin-bottom: 50px;
@@ -8,7 +7,7 @@
         display: none;
     }
     @media screen and (min-width: 1200px) {
-        display: contents;
+        display: block;
     }
 }
 

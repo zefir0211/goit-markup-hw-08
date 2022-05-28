@@ -9,12 +9,6 @@
   --background-color-team: #F5F4FA;
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 p,
 h1,
 h2,
@@ -72,6 +66,7 @@ img {
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
+    margin-right: 93px;
   }
 }
 
@@ -385,6 +380,12 @@ span,
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 .header__menu-btn {
   position: absolute;
   display: block;
@@ -424,7 +425,7 @@ span,
 }
 @media screen and (min-width: 1200px) {
   .header {
-    max-width: 1200px;
+    max-width: 100%;
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -485,6 +486,7 @@ span,
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
+    margin-left: auto;
   }
 }
 .contacts > a:hover, .contacts > a:focus {
@@ -687,7 +689,6 @@ span,
 }
 
 .main-skills {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .main-skills__heading {
@@ -700,7 +701,7 @@ span,
 }
 @media screen and (min-width: 1200px) {
   .main-skills {
-    display: contents;
+    display: block;
   }
 }
 
@@ -819,6 +820,16 @@ span,
 .main-clients__heading {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .main-clients__heading {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-clients {
+    padding: 94px 0px;
+  }
+}
 
 .clients-list {
   display: flex;
@@ -877,6 +888,12 @@ span,
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
